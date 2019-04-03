@@ -1,19 +1,18 @@
 'use strict';
 module.exports = function() {
   let myObject = {};
+  
   return {
     setValue: function(key, value){
       if (!key || !value){
         return null;
       }
       myObject.key = value;
-      //Object.defineProperty(myObject, key.
     },
     getValue: function(key){
-      if (key === undefined){
+      if (!key){
         return null;
       }
-      //if ()
       if (!myObject.key){
         return null;
       }
